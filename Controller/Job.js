@@ -1,4 +1,5 @@
 const Job = require("../Model/Job");
+const Author = require("../Model/Author")
 
 // Get a job
 const getJob = (req, res) => {
@@ -7,7 +8,7 @@ const getJob = (req, res) => {
 
 // Get all job
 const getAllJobs = (req, res) => {
-  Job.find((err, jobs) => {
+  Author.find((err, jobs) => {
     if (err) {
       res.send(err);
     }

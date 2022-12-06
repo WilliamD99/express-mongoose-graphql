@@ -11,8 +11,10 @@ const JobSchema = new mongoose.Schema({
   },
   createdAt: {
     type: String,
-    required: true,
   },
+  updatedAt: {
+    type: String
+  }
 });
 
 module.exports = mongoose.model("Job", JobSchema);
